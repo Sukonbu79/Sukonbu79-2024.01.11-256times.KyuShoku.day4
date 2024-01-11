@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Playground</title>
+    <!-- CSSを読み込むため、以下のタグは削除しないでください -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Walter+Turncoat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- このHTMLファイルは自由に編集していただいて構いません -->
+
+    <header>
+      <!-- ヘッダー -->
+      <!-- ロゴ画像を必ず含めてください -->
+      <div class="logo-area">
+        <img
+          src="https://user-images.githubusercontent.com/102784267/233593920-e899265d-4154-4256-9151-a0c54e26375e.png"
+          height="135"
+          class="logo logo-school"
+        />
+
+        <a href="#">
+          <img
+            src="https://user-images.githubusercontent.com/102784267/233595849-164e020b-f346-41bb-b74b-cd86db1266b4.png"
+            width="200"
+            class="logo logo-mobile"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="https://user-images.githubusercontent.com/102784267/233595845-fbb45d76-0f04-470f-ae9f-5760bde10c15.png"
+            width="312"
+            class="logo logo-pc"
+          />
+        </a>
+      </div>
+
+      <span id="open"><i class="bi bi-list"></i></span>
+      <span id="close"><i class="bi bi-x-octagon"></i></span>
+      <ul id="list">
+        <li><a href="#menu-top">menu</a></li>
+        <li><a href="#about-us">about us</a></li>
+        <li><a href="#">instagram</a></li>
+        <li><a href="#map">map</a></li>
+      </ul>
+    </header>
+
+    <section class="hero">
+      <!-- ヒーローエリア -->
+      <!-- キャッチコピーを必ず含めてください -->
+      <!-- 背景に画像を配置してください -->
+      <div class="container-main">
+        <img
+          src="https://user-images.githubusercontent.com/102784267/233598726-0516e701-8fdb-46bd-8194-4e6b90ffabce.png"
+          width="100%"
+          id="main-image"
+        />
+
+        <button id="prev"><i class="bi bi-arrow-left-square"></i></button>
+        <button id="next"><i class="bi bi-arrow-right-square"></i></button>
+      </div>
+
+      <div class="container-thumbnail">
+        <img
+          src="https://user-images.githubusercontent.com/102784267/233598726-0516e701-8fdb-46bd-8194-4e6b90ffabce.png"
+          width="80"
+          class="thumb active"
+        />
+
+        <img
+          src="https://user-images.githubusercontent.com/102784267/233598811-61025a54-411a-4ce1-b0bb-a07adcb228da.png"
+          width="80"
+          class="thumb"
+        />
+
+        <img
+          src="https://user-images.githubusercontent.com/102784267/233598868-cf75b367-27f2-4dfa-9882-ed17c2f2b3d0.png"
+          width="80"
+          class="thumb"
+        />
+
+        <img
+          src="https://user-images.githubusercontent.com/102784267/233598836-5aff188d-1c15-4721-8fd3-36d671527a45.png"
+          width="80"
+          class="thumb"
+        />
+
+        <img
+          src="https://user-images.githubusercontent.com/102784267/233598821-f3f54230-227a-4b40-a3cc-26290c252190.png"
+          width="80"
+          class="thumb"
+        />
+      </div>
+
+      <span class="catchphrase"
+        >「懐かしい給食の味、いつでもあなたに。<br />あの頃の笑顔が、またよみがえる」</span
+      >
+    </section>
+
+    <section class="menu">
+      <!-- 商品紹介 後日実装 -->
+      <h2 id="menu-top">懐かしのあの味</h2>
+      <ul class="item-list">
+        <li class="koppe">
+          <img
+            src="https://user-images.githubusercontent.com/102784267/233601083-5b2e3ea7-4594-437b-9b41-787fe7e4a138.png"
+            width="200"
+          />
+          <div class="menu-introduction">
+            <h3>コッペパン（税込180円）</h3>
+            <p>
+              ツヤのあるふわふわのコッペパン。<br />そのままでもやさしい甘みが自慢です。<br />もちろん、ジャムをつけてもおいしくお召し上がりいただけます<br />（レジ横でジャムも販売しています）。
+            </p>
+          </div>
+        </li>
+        <li class="twist">
+          <div class="item-introduction">
+            <h3>ツイストパン （税込170円）</h3>
+            <p>
+              モチモチとした食感が味わえます。<br />卵とバターの風味を強く感じられるところが当店のこだわりポイント。<br />オーブントースターで1分ほど焼いてからお召し上がりいただくのがおすすめです。
+            </p>
+          </div>
+          <img
+            src="https://user-images.githubusercontent.com/102784267/233601091-95134e25-1c2f-4310-a3e2-22b2de8a2311.png"
+            width="200"
+          />
+        </li>
+        <li class="maru">
+          <img
+            src="https://user-images.githubusercontent.com/102784267/233601076-1d532f0e-b089-48f6-a4f9-6f0a8838736e.png"
+            width="200"
+          />
+          <div class="item-introduction">
+            <h3>まるパン（税込160円）</h3>
+            <p>
+              あっさりとして素朴な味わいのシンプルなパンです。<br />お好みでバターをつけたり、半分に割ってハンバーグやミネストローネと一緒に食べても最高です！
+            </p>
+          </div>
+        </li>
+      </ul>
+      <div class="jam">
+        <h3>jam</h3>
+        <p>毎日新鮮な果物で作っています</p>
+        <ul>
+          <li>
+            <img
+              width="180"
+              src="https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/101/4236/ebaeab0cdf378b372171a1fc69504f49a8b9ca36.png"
+            />
+          </li>
+          <li>
+            <img
+              width="180"
+              src="https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/101/4238/5dfec969928f0bb7955eef65ff4242277deb26f0.png"
+            />
+          </li>
+          <li>
+            <img
+              width="180"
+              src="https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/101/4239/86e52803443e67bdc9563f0f5ce68584a0afe1e4.png"
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="infomation">
+      <!-- お知らせ 後日実装 -->
+      <h2>infomation</h2>
+      <div>
+        <img
+          src="https://user-images.githubusercontent.com/102784267/233593887-1fff5154-30cd-456f-816d-8ea89b19e008.png"
+          width="100"
+        />
+        <p>給食ぱん屋のパンが、近所のスーパーで販売されることになりました。</p>
+      </div>
+      <div>
+        <p>
+          給食ぱん屋では、毎週末に限定商品を販売しています。ぜひお試しください。
+        </p>
+        <img
+          src="https://user-images.githubusercontent.com/102784267/233593900-878f670a-19ba-4345-8bb4-66b2ff9b9b1e.png"
+          width="100"
+        />
+      </div>
+      <div>
+        <img
+          src="https://user-images.githubusercontent.com/102784267/233593907-b37fca96-1fbc-438f-bca4-b82f7fe29356.png"
+          width="100"
+        />
+        <p>
+          給食ぱん屋では、お子様向けのパン教室を開催しています。ご予約はお早めに！
+        </p>
+      </div>
+    </section>
+
+    <section id="about-us">
+      <!-- 店舗情報 後日実装 -->
+      <h2>about us</h2>
+      <div class="container">
+        <img
+          src="https://user-images.githubusercontent.com/102784267/233591834-3cb071f6-ab58-467a-95de-2449857b3cf7.png"
+          width="140"
+        />
+        <h3 class="store-name">給食ぱん屋</h3>
+      </div>
+      <div>
+        <h4>about owner</h4>
+        <div class="about-owner">
+          <p class="owner-name">「米本 朝陽（こめもと あさひ）」</p>
+          <p>
+            元小学校教師<br />給食のパンが好きすぎて休日に作っているうちにプロ級の腕前に。<br /><span
+              >ぱん屋のコンセプトは「給食」<br />『思い出の給食パンをリーズナブルに、いつでも提供したい』</span
+            ><br />給食に出てきた懐かしいパンが、家族や友人との会話のきっかけになることを願いながら毎日作っています。
+          </p>
+        </div>
+      </div>
+      <div class="opening-hours">
+        <h4>opening hours</h4>
+        <p>open:8:00 ~ close 19:00</p>
+        <p class="holiday"><span>火曜日：お休み</span></p>
+      </div>
+      <div class="parking">
+        <h4>parking</h4>
+        <p>
+          店舗の東側隣に５台分の駐車スペースあり<br />昼時は混み合うため、徒歩・自転車でご来店お願いします
+        </p>
+      </div>
+      <div class="access">
+        <div>
+          <h4 id="map">map</h4>
+          <img
+            src="https://user-images.githubusercontent.com/102784267/233602759-8d23b6ac-9fd1-4f72-a002-a90fbb27e67e.png"
+            width="400"
+            class="map-img"
+          />
+        </div>
+        <div class="address">
+          <h4>address</h4>
+          <p>東京都二五六区2-5-6</p>
+          <div class="route">
+            <p>
+              二五六駅西口出て、西へまっすぐ徒歩10分！<br />郵便局過ぎて１つめの交差点角<br />川の手前です
+            </p>
+          </div>
+          <div>
+            <h4>tell・mail</h4>
+            <div class="tell">
+              <p>tell: 000(××××)◯◯◯◯</p>
+            </div>
+            <div class="mail">
+              <p>mail: ----@****.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="welcome">
+        <img
+          src="https://user-images.githubusercontent.com/102784267/233593874-26eacd48-36e2-4774-b7e3-26f36655f193.png"
+          width="100"
+        />
+        <p>皆様のご来店を心待ちにしております</p>
+      </div>
+    </section>
+    <section class="contact">
+      <!-- お問い合わせ -->
+      <form action="">
+        <div class="contact-header">
+          <h2>お問い合わせ</h2>
+          <i class="bi bi-caret-down-square" id="contact-open"></i>
+          <i class="bi bi-caret-up-square contact-hide" id="contact-close"></i>
+        </div>
+
+        <div id="contact-form" class="hide-down">
+          <div>
+            <label>
+              お名前
+              <input type="text" placeholder="例：磯野　カツオ" required />
+            </label>
+          </div>
+          <div>
+            <label>
+              e-mail
+              <input type="email" placeholder="例：×××@××××" required />
+            </label>
+          </div>
+          <div>
+            <legend>お問い合わせの種類</legend>
+            <label for=""><input type="radio" name="type" />商品購入前</label>
+            <label for=""
+              ><input type="radio" name="type" checked />商品購入後</label
+            >
+            <label for=""><input type="radio" name="type" />その他</label>
+          </div>
+          <div>
+            <label>
+              <div>お問い合わせ内容</div>
+
+              <textarea
+                placeholder="例：ぱん作り教室の日程を知りたい"
+                cols="30"
+                rows="10"
+                required
+              ></textarea>
+            </label>
+          </div>
+          <p>お答えには１週間程度いただく場合もあります</p>
+          <div>
+            <buttun>送信</buttun>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <!-- フッター -->
+      <!-- (c) 256times.com を必ず含めてください -->
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i>instagram</a>
+      <a href="#map" class="footer-map"><i class="bi bi-geo-alt"></i>map</a>
+      <small class="copy">(c) 256times.com</small>
+    </footer>
+
+    <!-- JavaScriptの実装をする方は以下のタグを削除しないでください -->
+    <script src="main.js"></script>
+  </body>
+</html>

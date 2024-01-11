@@ -1,0 +1,506 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Walter Turncoat", "Comic Sans MS", cursive;
+}
+
+/* header */
+
+header {
+  margin: 0;
+  position: relative;
+}
+
+.logo-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  transition: opacity 0.3s;
+  object-fit: contain;
+}
+
+.logo-pc {
+  height: 120px;
+  display: none;
+}
+
+.logo-area a {
+  cursor: pointer;
+}
+
+.logo:hover {
+  opacity: 0.7;
+}
+
+@media (min-width: 600px) {
+  .logo-mobile {
+    display: none;
+  }
+  .logo-pc {
+    display: block;
+  }
+}
+
+/* header menu */
+
+header .bi {
+  font-size: 80px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+
+header .bi:hover {
+  opacity: 0.6;
+}
+
+header ul,
+header li,
+header a {
+  margin: 0;
+  padding: 0;
+}
+
+header ul {
+  list-style: none;
+  width: 200px;
+  background: #eee;
+  position: absolute;
+  top: -240px;
+  right: 8px;
+  z-index: 10;
+  border-radius: 6px;
+  transition: all 0.4s;
+}
+
+header li {
+  font-size: 32px;
+  text-align: center;
+  margin: 8px auto;
+  transition: all 0.3s;
+}
+
+header li:hover {
+  opacity: 0.7;
+}
+
+header a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* header menu,list show-hide */
+
+#close {
+  display: none;
+}
+
+#close.show {
+  display: block;
+}
+
+#open.hide {
+  display: none;
+}
+
+#list.show {
+  position: absolute;
+  top: 120px;
+  right: 8px;
+}
+
+/* Hero Erea */
+.hero img {
+  vertical-align: bottom;
+}
+
+.hero .container-main {
+  position: relative;
+}
+
+.hero .container-thumbnail {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+}
+
+.hero .thumb {
+  margin: 6px 0 0 0;
+  padding: 0;
+  width: calc((100% - 8px * 4) / 5);
+  transition: all 0.3s;
+}
+
+.hero .thumb:hover {
+  opacity: 0.7;
+}
+
+button {
+  all: unset;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 60px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  opacity: 0.6;
+}
+
+#prev {
+  position: absolute;
+  top: calc((100% - 48px) / 2);
+  left: 6px;
+}
+
+#next {
+  position: absolute;
+  top: calc((100% - 48px) / 2);
+  right: 6px;
+}
+
+.container-thumbnail {
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.container-thumbnail img {
+  margin-left: 8px;
+}
+
+.hero {
+  position: relative;
+}
+
+.catchphrase {
+  position: absolute;
+  bottom: 50%;
+  right: 15%;
+  color: #222;
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+  width: 70%;
+  background: rgba(256, 256, 256, 0.6);
+  border-radius: 8px;
+}
+
+/* .menu */
+.menu h2 {
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  line-height: 60px;
+  background: #ccc;
+  height: 60px;
+  width: 95%;
+  border-radius: 8px;
+  margin: 16px auto;
+}
+
+.menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: flex;
+  margin: 16px auto;
+  padding: 0;
+  width: 95%;
+}
+
+.menu img {
+  object-fit: contain;
+  flex-shrink: 0;
+  width: 30%;
+  margin: 0;
+  padding: 0;
+  /* border: #eee solid 3px;
+  border-radius: 120px; */
+}
+
+.menu .menu-introduction {
+  flex: 1;
+  margin: 0;
+  padding: 0 48px;
+}
+
+.menu-introduction p {
+  margin: 0;
+  padding: 0 6px;
+}
+
+.jam h3 {
+  font-size: 36px;
+  text-align: center;
+  margin: 0;
+}
+
+.jam p {
+  text-align: center;
+  margin: 0;
+}
+
+.jam ul {
+  display: flex;
+}
+
+.jam li {
+  justify-content: space-evenly;
+}
+
+.jam img {
+  width: 70%;
+}
+
+/* infomation */
+.infomation h2 {
+  text-align: center;
+  font-size: 36px;
+}
+
+.infomation div {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.infomation img {
+  object-fit: contain;
+}
+
+.infomation p {
+  padding: 0 64px;
+}
+
+/* about-us */
+#about-us h2 {
+  font-size: 36px;
+  text-align: center;
+  margin: 0;
+  background: #eee;
+}
+
+#about-us h2 + div {
+  background: #eee;
+}
+
+#about-us > .container {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-us img {
+  object-fit: contain;
+}
+
+.store-name {
+  border: 3px solid #333;
+  border-radius: 16px;
+  height: 80px;
+  line-height: 80px;
+  padding: 0 8px;
+  font-size: 36px;
+}
+
+.about-owner {
+  text-align: center;
+}
+
+.owner-name {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.about-owner p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about-owner span {
+  background: linear-gradient(transparent 70%, yellow 30%);
+}
+
+#about-us h4 {
+  text-align: center;
+  font-size: 30px;
+  margin: 8px 0 0;
+}
+
+.opening-hours p {
+  text-align: center;
+  font-size: 24px;
+}
+
+.holiday span {
+  background: linear-gradient(transparent 70%, pink 30%);
+}
+
+.parking {
+  text-align: center;
+  width: 95%;
+}
+
+.map-img {
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+  .access {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.address p {
+  text-align: center;
+  margin: auto;
+  padding: 0 24px;
+}
+
+.route {
+  margin-top: 18px;
+}
+
+.welcome {
+  display: flex;
+  padding-top: 60px;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+/* contact */
+.contact {
+  margin-top: 36px;
+  text-align: center;
+}
+
+.contact-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .bi {
+  font-size: 36px;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.contact .bi:hover {
+  opacity: 0.6;
+}
+
+#contact-form h2 {
+  font-size: 24px;
+  margin: 0;
+  padding: 8px 0;
+}
+
+#contact-form div {
+  margin-top: 8px;
+}
+
+#contact-form textarea {
+  width: 60%;
+}
+
+#contact-form p {
+  font-size: 18px;
+}
+
+#contact-form buttun {
+  border: #333 solid 3px;
+  border-radius: 8px;
+  font-size: 24px;
+  padding: 0 8px;
+  cursor: pointer;
+  background: #eee;
+}
+
+#contact-form buttun:hover {
+  opacity: 0.7;
+}
+
+/* for JavaScript contact-form */
+.contact-hide {
+  display: none;
+}
+
+.hide-down {
+  display: none;
+}
+
+/* footer */
+footer {
+  margin: 24px 0 0;
+  padding: 6px 0;
+  width: 100%;
+  height: 90px;
+  background-color: #ddd;
+  position: relative;
+  text-align: center;
+}
+
+footer a {
+  display: block;
+  text-decoration: none;
+}
+
+footer .bi {
+  padding-right: 6px;
+}
+
+.instagram {
+  font-size: 24px;
+  color: #5851db;
+  margin-top: 8px;
+  transition: all 0.3s;
+}
+
+.instagram:hover {
+  opacity: 0.6;
+}
+
+.footer-map {
+  font-size: 24px;
+  margin: 6px;
+  transition: all 0.3s;
+}
+
+.footer-map:hover {
+  opacity: 0.6;
+}
+
+footer .copy {
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  bottom: 4px;
+  right: 6px;
+}
